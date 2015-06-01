@@ -2,7 +2,8 @@
   "name": "foundation-compass-app",
   "version": "0.0.1",
   "private": "true",
-  "dependencies": {
-    "foundation": "zurb/bower-foundation"
+  "devDependencies": {
+    "foundation": "zurb/bower-foundation",
+    "picturefill": "~2.3.1"
   }
 }
