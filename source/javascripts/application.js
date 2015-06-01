@@ -1,5 +1,4 @@
-//= require jquery/dist/jquery
+//= require jquery/dist/jquery.min
 //= require foundation/js/foundation.min
 
 //= require init
-//= require script
