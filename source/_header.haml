@@ -1,20 +1,19 @@
-.row
-  .small-12.columns
-    .nav.top-bar
-      %ul.title-area
-        %li
-          %h1.name Psychotherapie Starnberg
-      .top-bar-section
-        %ul.right
-          %li.active
-            %a.navigation-item
-              =link_to 'Home', 'index.html'
-          %li.active
-            %a.navigation-item
-              =link_to 'About', 'about.html'
-          %li.active
-            %a.navigation-item
-              =link_to 'Behandlungsmethoden', 'treatment.html'
-          %li.active
-            %a.navigation-item
-            =link_to 'Contact', 'contact.html'
+.contain-to-grid.fixed
+  %nav.top-bar{"data-options" => "sticky_on: large", "data-topbar" => "", :role => "navigation"}
+    %ul.title-area
+      %li.name
+        %h1
+          = link_to 'Psychotherapie Starnberg', 'index.html'
+      %li.toggle-topbar.menu-icon
+        %a{:href => "#"}
+          %span Menu
+    %section.top-bar-section
+      %ul.right
+        %li.active
+          = link_to 'Home', 'index.html'
+        %li.active
+          = link_to 'About', 'about.html'
+        %li.active
+          = link_to 'Behandlungsmethoden', 'treatment.html'
+        %li.active
+          = link_to 'Contact', 'contact.html'
