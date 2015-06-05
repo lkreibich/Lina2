@@ -5,14 +5,13 @@
         = link_to File.open("source/images/logo.svg", "rb").read, 'index.html'
       %li.toggle-topbar.menu-icon
         %a{:href => "#"}
-          %span Menu
     %section.top-bar-section
       %ul.right
         %li.active
           = link_to 'START', 'index.html', relative: true
         %li.active
-          = link_to 'ÜBER MICH', 'about.html', relative: true
+          = link_to 'ÜBER MICH', 'ueber-mich.html', relative: true
         %li.active
-          = link_to 'BEHANDLUNGSMETHODEN', 'treatment.html', relative: true
+          = link_to 'BEHANDLUNGSANGEBOT', 'behandlungsangebot.html', relative: true
         %li.active
-          = link_to 'KONTAKT', 'contact.html', relative: true
+          = link_to 'KONTAKT', 'kontakt.html', relative: true
