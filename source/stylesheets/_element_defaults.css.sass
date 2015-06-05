@@ -1,3 +1,8 @@
+=retina-background($normal-image, $retina-image)
+  background-image: url($normal-image)
+  @media #{$retina}
+    background-image: url($retina-image)
+
 body
   font-family: 'Roboto', sans-serif
 
@@ -25,7 +30,24 @@ nav.top-bar
   max-width: 600px
   margin-top: 80px
   margin-left: 20px
+  margin-right: 20px
 
+.headerbild
+  height: 250px
+  &.on-homepage
+    +retina-background("/images/header_start.jpg", "/images/header_start_@2x.jpg")
+  &.on-kontakt
+    +retina-background("/images/header_kontakt.jpg", "/images/header_kontakt_@2x.jpg")
+  &.on-behandlungsangebot
+    +retina-background("/images/header_behandlungangebot.jpg", "/images/header_behandlungangebot_@2x.jpg")
+  &.on-uebermich
+    +retina-background("/images/header_kontakt.jpg", "/images/header_kontakt_@2x.jpg")
+
+.headline
+  z-index: 100
+  color: white
+  font-size: 40px
+  font-weight: bold
 
 .portrait
   max-width: 250px
