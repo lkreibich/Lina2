@@ -1,10 +1,16 @@
-.contain-to-grid.fixed
-  %nav.top-bar{"data-options" => "sticky_on: large", "data-topbar" => "", :role => "navigation"}
+= yield_content :header_image
+
+.contain-to-grid
+  %nav.top-bar{"data-topbar" => "", :role => "navigation"}
     %ul.title-area
       %li.name
-        = link_to File.open("source/images/logo.svg", "rb").read, 'index.html'
+        %h1
+          %a{:href => "#"}
+      / Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone
       %li.toggle-topbar.menu-icon
         %a{:href => "#"}
+          %span
+
     %section.top-bar-section
       %ul.right
         %li.active
