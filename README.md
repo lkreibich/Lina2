@@ -15,3 +15,19 @@ Tested with Ruby 2.2.2p95. Should work with any Ruby version >= 2.0.
 + start file watcher and server with:
   `bundle exec middleman`
 + open `http://localhost:4567`
+
+### Bower package versions
+
+```
+-> % bower list
+bower check-new     Checking for new versions of the project dependencies..
+foundation-compass-app#0.0.1 /Users/paul/p/lina-kreibich/repo
+└─┬ foundation#5.5.2
+  ├── fastclick#1.0.6
+  ├── jquery#2.1.4
+  ├─┬ jquery-placeholder#2.0.9 (latest is 2.1.1)
+  │ └── jquery#2.1.4
+  ├─┬ jquery.cookie#1.4.1
+  │ └── jquery#2.1.4
+  └── modernizr#2.8.3
+```

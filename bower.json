@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "private": "true",
   "devDependencies": {
-    "foundation": "zurb/bower-foundation",
-    "picturefill": "~2.3.1"
+    "foundation": "zurb/bower-foundation"
   }
 }
