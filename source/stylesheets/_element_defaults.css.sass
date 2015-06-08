@@ -43,8 +43,10 @@ nav.top-bar:not(.expanded)
     +retina-background(image-path("header_start.jpg"), image-path("header_start_@2x.jpg"))
   &.on-kontakt
     +retina-background(image-path("header_kontakt.jpg"), image-path("header_kontakt_@2x.jpg"))
-  &.on-behandlungsangebot
-    +retina-background(image-path("header_behandlungangebot.jpg"), image-path("header_behandlungangebot_@2x.jpg"))
+  &.on-behandlungsangebot-erwachsene
+    +retina-background(image-path("header_erwachsene.jpg"), image-path("header_erwachsene_@2x.jpg"))
+  &.on-behandlungsangebot-kinder-und-jugendliche
+    +retina-background(image-path("header_kinder.jpg"), image-path("header_kinder_@2x.jpg"))
   &.on-uebermich
     +retina-background(image-path("header_kontakt.jpg"), image-path("header_kontakt_@2x.jpg"))
 
@@ -56,7 +58,7 @@ nav.top-bar:not(.expanded)
 
 .portrait
   max-width: 250px
-  margin: 80px 20px 50px 20px
+  margin: 80px 0 50px 0
 
 //Treatment
 .treat
@@ -85,6 +87,8 @@ hr
   margin: 20px 20px 20px 20px
 .maps
   margin: 0 20px 50px 0
+  height: 350px
+  width: 100%
 
 //Table About
 .cv
