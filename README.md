@@ -15,3 +15,10 @@ Tested with Ruby 2.2.2p95. Should work with any Ruby version >= 2.0.
 + start file watcher and server with:
   `bundle exec middleman`
 + open `http://localhost:4567`
+
+### Deployment
+push only the `/build` folder to the `gh-pages branch:
+
+```
+git subtree push --prefix build origin gh-pages
+```
