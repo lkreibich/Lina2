@@ -102,4 +102,7 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+
+  # build pretty URLs - cf. https://middlemanapp.com/advanced/pretty_urls
+  activate :directory_indexes
 end
