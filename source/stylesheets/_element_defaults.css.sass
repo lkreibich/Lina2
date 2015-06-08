@@ -21,13 +21,11 @@ nav.top-bar:not(.expanded)
 .top-bar-section
   display: inline-block
   li
-    text-transform: uppercase
     a
       height: 45px
     a:hover
       padding-bottom: 3px
       border-bottom: 5px solid #e2e6e1
-
 
 //Home
 .home
@@ -36,6 +34,7 @@ nav.top-bar:not(.expanded)
   margin-top: 80px
   margin-left: 20px
   margin-right: 20px
+  padding-right: 10px
 
 .headerbild
   height: 250px
@@ -57,8 +56,16 @@ nav.top-bar:not(.expanded)
   font-weight: bold
 
 .portrait
+  display: block
+  float: right
   max-width: 250px
-  margin: 80px 0 50px 0
+  width: 100%
+  margin-top: 80px
+  margin-bottom: 50px
+  @media #{$small-only}
+    margin-left: auto
+    margin-right: auto
+    float: none
 
 //Treatment
 .treat
@@ -98,5 +105,3 @@ hr
     padding-left: 0px
   td
     vertical-align: top
-
-//Header
