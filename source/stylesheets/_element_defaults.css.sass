@@ -15,7 +15,11 @@ nav.top-bar
         height: 35px
         margin-top: 8px
 
+nav.top-bar:not(.expanded)
+  text-align: center
+
 .top-bar-section
+  display: inline-block
   li
     text-transform: uppercase
     a
@@ -23,6 +27,7 @@ nav.top-bar
     a:hover
       padding-bottom: 3px
       border-bottom: 5px solid #e2e6e1
+
 
 //Home
 .home

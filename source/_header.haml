@@ -1,10 +1,13 @@
-.contain-to-grid.fixed
-  %nav.top-bar{"data-options" => "sticky_on: large", "data-topbar" => "", :role => "navigation"}
+= yield_content :header_image
+
+.contain-to-grid
+  %nav.top-bar{"data-topbar" => "", :role => "navigation"}
     %ul.title-area
       %li.name
-        = link_to File.open("source/images/logo.svg", "rb").read, 'index.html', relative: true
       %li.toggle-topbar.menu-icon
         %a{:href => "#"}
+          %span
+
     %section.top-bar-section
       %ul.right
         %li.active
