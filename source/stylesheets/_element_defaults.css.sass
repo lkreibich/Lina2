@@ -35,23 +35,23 @@ nav.top-bar
 .headerbild
   height: 250px
   &.on-homepage
-    +retina-background("/images/header_start.jpg", "/images/header_start_@2x.jpg")
+    +retina-background(image-path("header_start.jpg"), image-path("header_start_@2x.jpg"))
   &.on-kontakt
-    +retina-background("/images/header_kontakt.jpg", "/images/header_kontakt_@2x.jpg")
+    +retina-background(image-path("header_kontakt.jpg"), image-path("header_kontakt_@2x.jpg"))
   &.on-behandlungsangebot
-    +retina-background("/images/header_behandlungangebot.jpg", "/images/header_behandlungangebot_@2x.jpg")
+    +retina-background(image-path("header_behandlungangebot.jpg"), image-path("header_behandlungangebot_@2x.jpg"))
   &.on-uebermich
-    +retina-background("/images/header_kontakt.jpg", "/images/header_kontakt_@2x.jpg")
+    +retina-background(image-path("header_kontakt.jpg"), image-path("header_kontakt_@2x.jpg"))
 
 .headline
-  z-index: 100
+  z-index: 2
   color: white
   font-size: 40px
   font-weight: bold
 
 .portrait
   max-width: 250px
-  margin: 20px 20px 50px 20px
+  margin: 80px 20px 50px 20px
 
 //Treatment
 .treat
