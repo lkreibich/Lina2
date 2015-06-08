@@ -14,7 +14,12 @@
           = link_to 'START', 'index.html', relative: true
         %li.active
           = link_to 'ÜBER MICH', 'ueber-mich.html', relative: true
-        %li.active
-          = link_to 'BEHANDLUNGSANGEBOT', 'behandlungsangebot.html', relative: true
+        %li.has-dropdown
+          %a{:href => "#"} BEHANDLUNGSANGEBOT
+          %ul.dropdown
+            %li
+              = link_to 'ERWACHSENE', 'behandlungsangebot-erwachsene.html', relative: true
+            %li
+              = link_to 'KINDER UND JUGENDLICHE', 'behandlungsangebot-kinder-und-jugendliche.html', relative: true
         %li.active
           = link_to 'KONTAKT', 'kontakt.html', relative: true
