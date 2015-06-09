@@ -87,12 +87,14 @@ nav.top-bar:not(.expanded)
 
 .header-img
   height: 250px
-  background-size: 100% auto
+  background-size: auto 100%
   background-repeat: no-repeat
+  background-position: center
+  position: relative
   &.on-homepage
     +retina-background(image-path("header_start.jpg"), image-path("header_start@2x.jpg"))
   &.on-kontakt
-    +retina-background(image-path("header_kontakt.jpg"), image-path("header_kontakt_@2x.jpg"))
+    +retina-background(image-path("header_kontakt.jpg"), image-path("header_kontakt@2x.jpg"))
   &.on-behandlungsangebot-erwachsene
     +retina-background(image-path("header_erwachsene.jpg"), image-path("header_erwachsene@2x.jpg"))
   &.on-behandlungsangebot-kinder-und-jugendliche
@@ -107,6 +109,9 @@ nav.top-bar:not(.expanded)
   font-size: 24px
   text-align: center
   padding-top: 40px
+  position: absolute
+  top: 25%
+  width: 100%
   .header-img-name
     font-size: 16px
 
