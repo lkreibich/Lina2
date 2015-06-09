@@ -86,6 +86,11 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+# make all links built with `link_to` relative
+# can be overridden by passing `relative: false` to `link_to`
+# cf. https://middlemanapp.com/basics/helper_methods/
+set :relative_links, true
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
@@ -102,4 +107,7 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+
+  # build pretty URLs - cf. https://middlemanapp.com/advanced/pretty_urls
+  activate :directory_indexes
 end
