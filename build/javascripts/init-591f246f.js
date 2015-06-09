@@ -1,0 +1,1 @@
+(function(){$(document).foundation({topbar:{index:0,stickyClass:"sticky",custom_back_text:!0,back_text:"zur\xfcck",init:!0,mobile_show_parent_link:!1}}),$(function(){return console.log("hello")})}).call(this);
