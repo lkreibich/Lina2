@@ -55,23 +55,26 @@ h5
 //Navi
 nav.top-bar
   font-family: 'Roboto Condensed', sans-serif
-  .name
-    a
-      svg
-        height: 35px
-        margin-top: 8px
+  font-size: 15px
 
 nav.top-bar:not(.expanded)
   text-align: center
 
 .top-bar-section
-  display: inline-block
+  @media #{$medium-up}
+    display: inline-block
   li
     a
       height: 45px
     a:hover
       padding-bottom: 3px
       border-bottom: 5px solid #e2e6e1
+
+.top-bar-section .dropdown li.title h5 a
+  font-family: 'Roboto Condensed'
+  font-size: 15px
+  color: #999
+
 
 //Home
 .home
