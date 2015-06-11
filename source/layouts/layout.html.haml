@@ -4,7 +4,7 @@
     %meta{ charset: 'utf-8' }/
     %meta{ content: 'width=device-width, initial-scale=1.0', name: 'viewport' }/
     %title= data.page.title ||'Lina Kreibich - Psychotherapie Starnberg'
-    %meta= data.page.meta
+    %meta{:name => "description", :content => data.page.meta}
     = stylesheet_link_tag 'application'
     = javascript_include_tag 'modernizr'
     %link{:href => "http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700", :rel => "stylesheet", :type => "text/css"}/
