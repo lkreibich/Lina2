@@ -1,0 +1,35 @@
+.row
+  .small-12.columns.logo
+    %h1
+      %span#logobg
+        %span#logo ANNE-KAROLINA KREIBICH
+        %br/
+        %span#sublogo PSYCHOTHERAPIE IN STARNBERG
+
+= yield_content :header_image
+
+.row
+  .small-12.columns
+
+    %nav.top-bar{"data-topbar" => "", :role => "navigation"}
+      %ul.title-area
+        %li.name
+        %li.toggle-topbar.menu-icon
+          %a{:href => "#"}
+            %span Menu
+
+      %section.top-bar-section
+        %ul.right
+          %li.active
+            = link_to 'START', 'index.html'
+          %li.active
+            = link_to 'ÜBER MICH', 'ueber-mich.html'
+          %li.has-dropdown
+            %a{:href => "#"} BEHANDLUNGSANGEBOT
+            %ul.dropdown
+              %li
+                = link_to 'ERWACHSENE', 'behandlungsangebot-erwachsene.html'
+              %li
+                = link_to 'KINDER UND JUGENDLICHE', 'behandlungsangebot-kinder-und-jugendliche.html'
+          %li.active
+            = link_to 'KONTAKT', 'kontakt.html'

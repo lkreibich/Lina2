@@ -38,7 +38,7 @@
 // We use these to control various global styles
 // $body-bg: #fff
 // $body-font-color: #222
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif
+$body-font-family: "Roboto", sans-serif
 // $body-font-weight: normal
 // $body-font-style: normal
 
@@ -113,7 +113,7 @@
 // $include-html-type-classes: $include-html-classes
 
 // We use these to control header font styles
-// $header-font-family: $body-font-family
+$header-font-family: $body-font-family
 // $header-font-weight: 300
 // $header-font-style: normal
 // $header-font-color: #222
@@ -142,9 +142,9 @@
 // $small-font-color: scale-color($header-font-color, $lightness: 35%)
 
 // We use these to style paragraphs
-// $paragraph-font-family: inherit
+$paragraph-font-family: $body-font-family
 // $paragraph-font-weight: normal
-// $paragraph-font-size: 1rem
+$paragraph-font-size: 1rem
 // $paragraph-line-height: 1.6
 // $paragraph-margin-bottom: rem-calc(20)
 // $paragraph-aside-font-size: rem-calc(14)
@@ -165,7 +165,7 @@
 // We use these to style the <hr> element
 // $hr-border-width: 1px
 // $hr-border-style: solid
-// $hr-border-color: #ddd
+$hr-border-color: #b6bcb3
 // $hr-margin: rem-calc(20)
 
 // We use these to style lists
@@ -217,7 +217,7 @@
 // $include-html-accordion-classes: $include-html-classes
 
 // $accordion-navigation-padding: rem-calc(16)
-// $accordion-navigation-bg-color: #efefef  
+// $accordion-navigation-bg-color: #efefef
 // $accordion-navigation-hover-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -5%)
 // $accordion-navigation-active-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -3%)
 // $accordion-navigation-font-color: #222
@@ -412,7 +412,7 @@
 // $f-dropdown-font-size: rem-calc(14)
 // $f-dropdown-list-padding: rem-calc(5, 10)
 // $f-dropdown-line-height: rem-calc(18)
-// $f-dropdown-list-hover-bg: #eeeeee  
+// $f-dropdown-list-hover-bg: #eeeeee
 // $dropdown-mobile-default-float: 0
 
 // We use this to control the styles for when the dropdown has custom content.
@@ -801,7 +801,7 @@
 // $price-title-font-family: $body-font-family
 
 // We use these to control the price styles
-// $price-money-bg: #f6f6f6  
+// $price-money-bg: #f6f6f6
 // $price-money-padding: rem-calc(15 20)
 // $price-money-align: center
 // $price-money-color: #333
@@ -838,7 +838,7 @@
 
 // We use this to se the prog bar height
 // $progress-bar-height: rem-calc(25)
-// $progress-bar-color: #f6f6f6  
+// $progress-bar-color: #f6f6f6
 
 // We use these to control the border styles
 // $progress-bar-border-color: scale-color(#fff, $lightness: -20%)
@@ -1025,15 +1025,15 @@
 
 // These control the background color for the table and even rows
 // $table-bg: #fff
-// $table-even-row-bg: #f9f9f9  
+$table-even-row-bg: #fff
 
 // These control the table cell border style
-// $table-border-style: solid
+$table-border-style: none
 // $table-border-size: 1px
 // $table-border-color: #ddd
 
 // These control the table head styles
-// $table-head-bg: #f5f5f5  
+// $table-head-bg: #f5f5f5
 // $table-head-font-size: rem-calc(14)
 // $table-head-font-color: #222
 // $table-head-font-weight: bold
@@ -1056,7 +1056,7 @@
 // $include-html-tabs-classes: $include-html-classes
 
 // $tabs-navigation-padding: rem-calc(16)
-// $tabs-navigation-bg-color: #efefef  
+// $tabs-navigation-bg-color: #efefef
 // $tabs-navigation-active-bg-color: #fff
 // $tabs-navigation-hover-bg-color: scale-color($tabs-navigation-bg-color, $lightness: -6%)
 // $tabs-navigation-font-color: #222
@@ -1119,11 +1119,11 @@
 // $include-html-top-bar-classes: $include-html-classes
 
 // Background color for the top bar
-// $topbar-bg-color: #333
-// $topbar-bg: $topbar-bg-color
+$topbar-bg-color: #fff
+$topbar-bg: $topbar-bg-color
 
 // Height and margin
-// $topbar-height: 45px
+$topbar-height: rem-calc(50px)
 // $topbar-margin-bottom: 0
 
 // Controlling the styles for the title in the top bar
@@ -1131,26 +1131,32 @@
 // $topbar-title-font-size: rem-calc(17)
 
 // Style the top bar dropdown elements
-// $topbar-dropdown-bg: #333
-// $topbar-dropdown-link-color: #fff
-// $topbar-dropdown-link-bg: #333
-// $topbar-dropdown-link-weight: normal
+$topbar-dropdown-bg: #fff
+$topbar-dropdown-link-color: #555
+$topbar-dropdown-link-bg: #fff
+$topbar-dropdown-link-weight: normal
+$topbar-dropdown-link-color-hover: #000
+$topbar-dropdown-link-bg-hover: #f0f0f0
+
+
 // $topbar-dropdown-toggle-size: 5px
-// $topbar-dropdown-toggle-color: #fff
+$topbar-dropdown-toggle-color: #333
 // $topbar-dropdown-toggle-alpha: 0.4
 
 // Set the link colors and styles for top-level nav
-// $topbar-link-color: #fff
-// $topbar-link-color-hover: #fff
-// $topbar-link-color-active: #fff
-// $topbar-link-color-active-hover: #fff
+$topbar-link-color: #000
+$topbar-link-color-hover: #000
+$topbar-link-color-active: #000
+$topbar-link-color-active-hover: #000
 // $topbar-link-weight: normal
-// $topbar-link-font-size: rem-calc(13)
+$topbar-link-font-size: rem-calc(15)
 // $topbar-link-hover-lightness: -10% // Darken by 10%
-// $topbar-link-bg-hover: #272727  
-// $topbar-link-bg-active: $primary-color
-// $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%)
+$topbar-link-bg-hover: #fff
+$topbar-link-bg-active: #fff
+$topbar-link-font-family: "Roboto Condensed", sans-serif
+$topbar-link-bg-active-hover: #fff
 // $topbar-link-font-family: $body-font-family
+
 
 // $topbar-button-font-size: 0.75rem
 
@@ -1158,16 +1164,17 @@
 // $topbar-dropdown-label-text-transform: uppercase
 // $topbar-dropdown-label-font-weight: bold
 // $topbar-dropdown-label-font-size: rem-calc(10)
-// $topbar-dropdown-label-bg: #333
+// $topbar-dropdown-label-bg: #fff
 
 // Top menu icon styles
 // $topbar-menu-link-transform: uppercase
 // $topbar-menu-link-font-size: rem-calc(13)
 // $topbar-menu-link-weight: bold
-// $topbar-menu-link-color: #fff
-// $topbar-menu-icon-color: #fff
+$topbar-menu-link-color: #000
+$topbar-menu-icon-color: #000
 // $topbar-menu-link-color-toggled: #888
 // $topbar-menu-icon-color-toggled: #888
+$topbar-menu-icon-color: #000
 
 // Transitions and breakpoint styles
 // $topbar-transition-speed: 300ms
