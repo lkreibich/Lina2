@@ -85,8 +85,7 @@ nav.top-bar:not(.expanded)
 .home
   font-family: 'Roboto', sans-serif
   max-width: 600px
-  margin-top: 40px
-  margin-left: 20px
+  margin-top: 60px
   margin-right: 20px
   padding-right: 10px
 
@@ -122,12 +121,14 @@ nav.top-bar:not(.expanded)
   .header-img-name
     font-size: 16px
 
-.portrait
-  margin-top: 20px
-
 .portrait-wrapper
+  +retina-background(image-path("portrait.png"), image-path("portrait_@2x.png"))
+  background-repeat: no-repeat
+  position: relative
   max-width: 250px
   width: 100%
+  height: 250px
+  margin-top: 20px
   @media #{$small-only}
     margin-left: auto
     margin-right: auto
@@ -137,6 +138,7 @@ nav.top-bar:not(.expanded)
   font-size: 12px
   text-align: center
   margin-top: 10px
+
 
 //Treatment
 .treat
@@ -177,6 +179,5 @@ hr
     vertical-align: top
     font-size: 16px
 .qualification
-  margin-top: 60px
   li
     font-size: 16px
