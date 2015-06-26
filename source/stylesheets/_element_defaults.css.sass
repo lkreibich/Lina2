@@ -74,14 +74,13 @@ nav.top-bar:not(.expanded)
       border-bottom: 5px solid #e2e6e1
 
 .top-bar-section .dropdown li.title h5 a
-  font-family: 'Roboto Condensed'
+  font-family: 'Roboto Condensed', sans-serif
   font-size: 15px
   color: #999
 
 .dropdown
   -moz-box-shadow: 5px 5px 5px #292929
   -webkit-box-shadow: 5px 5px 5px #292929
-  box-shadow: none
   border: 1px solid #ccc
   border-top: 0
 
@@ -108,12 +107,12 @@ nav.top-bar:not(.expanded)
     +retina-background(image-path("header_erwachsene.jpg"), image-path("header_erwachsene@2x.jpg"))
   &.on-behandlungsangebot-kinder-und-jugendliche
     +retina-background(image-path("header_kinder.jpg"), image-path("header_kinder@2x.jpg"))
-  &.on-uebermich
+  &.on-ueber-mich
     +retina-background(image-path("header_ueber_mich.jpg"), image-path("header_ueber_mich@2x.jpg"))
 
 .header-img-text
   z-index: 2
-  font-family: 'Georgia'
+  font-family: Georgia, serif
   font-style: italic
   color: white
   text-shadow: 2px 2px 4px #000000
@@ -128,6 +127,7 @@ nav.top-bar:not(.expanded)
 
 .portrait-wrapper
   +retina-background(image-path("portrait.png"), image-path("portrait_@2x.png"))
+  background-size: auto 100%
   background-repeat: no-repeat
   max-width: 250px
   width: 100%
