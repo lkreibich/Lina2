@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'middleman'
 gem 'middleman-livereload'
 
+gem 'builder'
+
 # - - - - - - -
 # Ruby 1.8 and Windows-only stuff from the original middleman
 # template (https://github.com/axyz/middleman-zurb-foundation) we don't need
