@@ -3,6 +3,13 @@
   @media #{$retina}
     background-image: url($retina-image)
 
+=hyphens($mode)
+  -moz-hyphens: $mode
+  -o-hyphens: $mode
+  -webkit-hyphens: $mode
+  -ms-hyphens: $mode
+  hyphens: $mode
+
 body
   font-family: 'Roboto', sans-serif
 
@@ -10,7 +17,8 @@ h3
   text-transform: uppercase
   font-size: 18px
   font-weight: 600
-
+  &.with-margin-top
+    margin-top: 50px
 h4
   text-transform: uppercase
   font-size: 16px
@@ -22,26 +30,27 @@ h5
 h6
   font-size: 16px
   font-weight: 600
+
 .logo
   h1
     text-align: center
     font-family: 'Roboto Condensed', sans-serif
     line-height: 15pt
     z-index: 1
-    margin-top: 20px
     margin-bottom: 20px
     position: relative
-
-  h1:before
-    border-top: 2px solid #dfdfdf
-    content: ""
-    margin: 0 auto
-    position: absolute
-    top: 30px
-    left: 0
-    right: 0
-    bottom: 0
-    z-index: -2
+    @media #{$medium-up}
+      margin-top: 20px
+    &:before
+      border-top: 2px solid #dfdfdf
+      content: ""
+      margin: 0 auto
+      position: absolute
+      top: 30px
+      left: 0
+      right: 0
+      bottom: 0
+      z-index: -2
 
 #logo
   font-size: 0.55em
@@ -56,12 +65,23 @@ h6
   padding: 3px 10px
 
 //Navi
+.navigation_small
+  @media #{$medium-up}
+    display: none
+
+.navigation_medium-up
+  @media #{$small-only}
+    display: none
+
+body.f-topbar-fixed
+  @media #{$medium-up}
+    padding-top: 0
+
 nav.top-bar
   font-family: 'Roboto Condensed', sans-serif
   font-size: 15px
-
-nav.top-bar:not(.expanded)
-  text-align: center
+  &:not(.expanded)
+    text-align: center
 
 .top-bar-section
   @media #{$medium-up}
@@ -69,9 +89,9 @@ nav.top-bar:not(.expanded)
   li
     a
       height: 45px
-    a:hover
-      padding-bottom: 3px
-      border-bottom: 5px solid #e2e6e1
+      &:hover
+        padding-bottom: 3px
+        border-bottom: 5px solid #e2e6e1
 
 .top-bar-section .dropdown li.title h5 a
   font-family: 'Roboto Condensed', sans-serif
@@ -83,15 +103,6 @@ nav.top-bar:not(.expanded)
   -webkit-box-shadow: 5px 5px 5px #292929
   border: 1px solid #ccc
   border-top: 0
-
-
-//Home
-.home
-  font-family: 'Roboto', sans-serif
-  max-width: 600px
-  margin-top: 60px
-  margin-right: 20px
-  padding-right: 10px
 
 .header-img
   height: 250px
@@ -122,36 +133,36 @@ nav.top-bar:not(.expanded)
   position: absolute
   top: 25%
   width: 100%
+  @media #{$small-only}
+    padding-top: 15px
   .header-img-name
     font-size: 16px
 
+.main-content
+  margin-top: 30px
+
 .portrait-wrapper
+  width: 100%
+  float: right
+  @media #{$small-only}
+    float: none
+  @media #{$medium-up}
+    max-width: 250px
+
+.portrait
   +retina-background(image-path("portrait.png"), image-path("portrait_@2x.png"))
-  background-size: auto 100%
+  background-size: 100% auto
   background-repeat: no-repeat
   max-width: 250px
   width: 100%
   height: 250px
-  margin-top: 20px
   margin-left: auto
   margin-right: auto
-  @media #{$small-up}
-    background-size: auto 99%
-    margin-left: auto
-    margin-right: auto
 
-.subline
+.portrait-subline
   font-size: 12px
   text-align: center
   margin-top: 10px
-
-//Treatment
-.treat
-  margin-top: 60px
-
-//Impressum
-.imprint
-  margin-top: 60px
 
 //Footer
 p.footer
@@ -178,18 +189,22 @@ hr
 .map
   margin: 15px 15px 0 15px
 
-.way
-  margin-top: 60px
-
 //Table About
 .cv
-  td:first-child
-    width: 20%
-    font-weight: bold
-    padding-left: 0px
   td
     vertical-align: top
     font-size: 16px
+    @media #{$small-only}
+      +hyphens(auto)
+    &:first-child
+      width: 20%
+      font-weight: bold
+      padding-left: 0px
+      +hyphens(auto)
+      @media #{$small-only}
+        font-size: 13px
+        padding-right: 0
+
 .qualification
   li
     font-size: 16px

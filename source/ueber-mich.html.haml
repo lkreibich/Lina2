@@ -7,30 +7,24 @@ title: Anne-Karolina Kreibich - Psychotherapie Starnberg - Über mich
     .small-12.columns
       .header-img.on-ueber-mich
 
-.row
-  .small-12.large-8.columns
-    .home
-      %h3 Hallo. Ich bin Anne-Karolina Kreibich, ...
-      :markdown
-        \...psychologische Psychotherapeutin für Verhaltenstherapie, das heißt Diplom-Psychologin mit staatlicher Approbation. Nach meiner Ausbildung zur Erwachsenentherapeutin habe ich die Weiterbildung für Kinder- und Jugendlichenpsychotherapie absolviert und behandle seitdem Erwachsene, Kinder und Jugendliche.
+.row.main-content
+  .small-12.medium-8.columns
+    %h3 Hallo. Ich bin Anne-Karolina Kreibich, ...
+    %p
+      \...psychologische Psychotherapeutin für Verhaltenstherapie, das heißt Diplom-Psychologin mit staatlicher Approbation. Nach meiner Ausbildung zur Erwachsenentherapeutin habe ich die Weiterbildung für Kinder- und Jugendlichenpsychotherapie absolviert und behandle seitdem Erwachsene, Kinder und Jugendliche.
 
-  .small-12.large-4.columns
-    .portrait-wrapper
-    .subline
-      Anne-Karolina Kreibich
+    .show-for-small-only
       %br
-      Psychologische Psychotherapeutin
-  .small-12.medium-8.qualification.columns
-    %h3 Therapeutische Qualifikationen
-    %ul
+      = partial :portrait
+
+    %h3.with-margin-top Therapeutische Qualifikationen
+    %ul.qualification
       %li Psychologische Psychotherapeutin für Verhaltenstherapie (2008-2011)
       %li Zusatzqualifikation als Kinder- und Jugendlichentherapeutin,
       Verhaltenstherapie (2010-2013)
       %li Weiterbildung Gruppentherapie, Verhaltenstherapie (2008-2011)
-    %br
 
-  .small-12.medium-8.columns.left
-    %h3 Mein Werdegang
+    %h3.with-margin-top Mein Werdegang
     %table.cv
       %tr
         %td Seit 2015
@@ -68,3 +62,6 @@ title: Anne-Karolina Kreibich - Psychotherapie Starnberg - Über mich
       %tr
         %td 2002-2004
         %td Grundstudium der Psychologie (Diplom) an der Universität Eichstätt-Ingolstadt
+
+  .small-12.medium-4.columns.show-for-medium-up
+    = partial 'portrait'
