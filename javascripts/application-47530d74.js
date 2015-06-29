@@ -20,4 +20,4 @@ if(s.dropdown_autoclose&&s.is_hover){var a=t(this).closest(".hover");a.removeCla
  * Modification for Foundation 5 auto height issues
  * Modification for new DOM change event listener
  */
-window.onload=function(){stickyFooter(),observer.observe(target,config)};var target=document.body,observer=new MutationObserver(mutationObjectCallback),config={attributes:!0,childList:!0,characterData:!0};window.onresize=function(){stickyFooter()},function(){$(document).foundation({topbar:{index:0,stickyClass:"sticky",custom_back_text:!0,back_text:"zur\xfcck",init:!0,mobile_show_parent_link:!1}}),$(function(){return console.log("hello")})}.call(this);
+window.onload=function(){stickyFooter(),observer.observe(target,config)};var target=document.body,observer=new MutationObserver(mutationObjectCallback),config={attributes:!0,childList:!0,characterData:!0};window.onresize=function(){stickyFooter()},function(){$(document).foundation({topbar:{index:0,stickyClass:"sticky",custom_back_text:!0,back_text:"zur\xfcck",init:!0,mobile_show_parent_link:!1,scrolltop:!1,is_hover:!1}})}.call(this);
