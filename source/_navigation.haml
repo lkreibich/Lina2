@@ -1,3 +1,5 @@
+- current_path = current_page.path
+
 %nav.top-bar{'data-topbar' => '', role: 'navigation'}
   %ul.title-area
     %li.name
@@ -7,16 +9,14 @@
 
   %section.top-bar-section
     %ul.right
-      %li
-        = link_to 'START', 'index.html'
-      %li
-        = link_to 'ÜBER MICH', 'ueber-mich.html'
-      %li.has-dropdown
-        %a{href: '#'} BEHANDLUNGSANGEBOT
+      = navigation_entry 'Start', 'index.html', current_path
+      = navigation_entry 'Über mich', 'ueber-mich.html', current_path
+      %li.has-dropdown{ class: behandlungs_class(current_path, ['behandlungsangebot-erwachsene.html', 'behandlungsangebot-kinder-und-jugendliche.html']) }
+        %a{href: '#', data: {options: 'is_hover: true'}}
+          Behandlungsangebot
         %ul.dropdown
           %li
-            = link_to 'ERWACHSENE', 'behandlungsangebot-erwachsene.html'
+            = link_to 'Erwachsene', 'behandlungsangebot-erwachsene.html'
           %li
-            = link_to 'KINDER UND JUGENDLICHE', 'behandlungsangebot-kinder-und-jugendliche.html'
-      %li
-        = link_to 'KONTAKT', 'kontakt.html'
+            = link_to 'Kinder und Jugendliche', 'behandlungsangebot-kinder-und-jugendliche.html'
+      = navigation_entry 'Kontakt', 'kontakt.html', current_path

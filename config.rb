@@ -64,6 +64,19 @@ page '/sitemap.xml', layout: false
 
 ###
 # Helpers
+# https://middlemanapp.com/basics/helper_methods/#custom-defined-helpers
+helpers do
+  def navigation_entry(anchor_text, path, current_path)
+    class_name = current_page.path == path ? 'active' : ''
+    content_tag :li, class: class_name do
+      link_to anchor_text, path
+    end
+  end
+
+  def behandlungs_class(current_path, paths)
+    current_path.in?(paths) ? 'active' : nil
+  end
+end
 ###
 
 # Automatic image dimensions on image_tag helper
