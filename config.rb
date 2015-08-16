@@ -104,7 +104,7 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
-set :build_dir, '../gh-pages'
+set :build_dir, '../dist-repo'
 
 # make all links built with `link_to` relative
 # can be overridden by passing `relative: false` to `link_to`

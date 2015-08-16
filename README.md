@@ -4,6 +4,23 @@ Based on this Middleman template: [https://github.com/axyz/middleman-zurb-founda
 ### Development Setup
 Tested with Ruby 2.2.2p95. Should work with any Ruby version >= 2.0.
 
+check out branch `source` for the source code. Then check out branch `master` in a separate git clone. 
+
+    git clone git@github.com:lkreibich/lkreibich.github.io.git source-repo
+    cd source-repo
+    git checkout source
+    git branch -d master
+
+    git clone git@github.com:lkreibich/lkreibich.github.io.git dist-repo
+    cd source-repo
+    git branch -d source
+
+    cd source-repo
+    MAKE SOME CHANGES
+    middleman build
+
+code in dist-repo should have been changed, commit and push.
+
 + `gem install middleman`
 + check that you have `npm` installed (tested with version 2.7.4, but slightly older versions should be fine)
   `npm -v`
