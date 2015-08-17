@@ -13,7 +13,8 @@
     %link{ href: image_path('/favicon.png'), rel: 'shortcut icon' }/
   %body{ class: page_classes }
     = partial 'header'
-    = yield
+    %main
+      = yield
     = partial 'footer'
     = partial 'tracking'
     = javascript_include_tag 'application'

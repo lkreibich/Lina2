@@ -1,17 +1,18 @@
-.row
-  .small-12.columns
-    .navigation_small.fixed
-      = partial 'navigation'
-    .logo
-      %h1
-        %span#logobg
-          %span#logo ANNE-KAROLINA KREIBICH
-          %br
-          %span#sublogo PSYCHOTHERAPIE IN STARNBERG
+%header
+  .row
+    .small-12.columns
+      .navigation_small.fixed
+        = partial 'navigation'
+      .logo
+        %h1
+          %span#logobg
+            %span#logo ANNE-KAROLINA KREIBICH
+            %br
+            %span#sublogo PSYCHOTHERAPIE IN STARNBERG
 
-= yield_content :header_image
+  = yield_content :header_image
 
-.row
-  .small-12.columns
-    .navigation_medium-up
-      = partial 'navigation'
+  .row
+    .small-12.columns
+      .navigation_medium-up
+        = partial 'navigation'
