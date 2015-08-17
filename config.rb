@@ -76,6 +76,10 @@ helpers do
   def behandlungs_class(current_path, paths)
     current_path.in?(paths) ? 'active' : nil
   end
+
+  def canonical_host
+    'http://www.psychotherapiestarnberg.de'
+  end
 end
 ###
 

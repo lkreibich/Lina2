@@ -4,6 +4,7 @@
     %meta{ charset: 'utf-8' }/
     %meta{ content: 'width=device-width, initial-scale=1.0', name: 'viewport' }/
     %title= data.page.title ||'Lina Kreibich - Psychotherapie Starnberg'
+    %link{ rel: 'canonical', href: (canonical_host + data.page.canonical_path) }
     %meta{ name: 'description', content: data.page.meta || 'Dipl.-Psych. Anne-Karolina Kreibich Praxis für Psychotherapie für Erwachsene, Kinder und Jugendliche Psychologische Psychotherapeutin' }
     = stylesheet_link_tag 'application'
     = javascript_include_tag 'modernizr'
