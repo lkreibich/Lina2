@@ -16,12 +16,19 @@ check out branch `source` for the source code. Then check out branch `master` in
     git branch -d source
 
     cd source-repo
-    MAKE SOME CHANGES
-    middleman build
+    bundle (tested with bundler version 1.15.1, see below for troubleshooting when EventMachine install fails)
 
-code in dist-repo should have been changed, commit and push.
+Should you run into the following error:
 
-+ `gem install middleman`
+    ./project.h:116:10: fatal error: 'openssl/ssl.h' file not found
+    #include <openssl/ssl.h>
+
+Install `eventmachine` with the following command:
+
+    gem install eventmachine -v '1.0.7' -- --with-cppflags=-I/usr/local/opt/openssl/include
+
+
+#### Bower Setup
 + check that you have `npm` installed (tested with version 2.7.4, but slightly older versions should be fine)
   `npm -v`
 + if you **don't** have npm, install `node` (which includes `npm`) via Homebrew with: `brew update && brew install node`
@@ -32,6 +39,18 @@ code in dist-repo should have been changed, commit and push.
 + start file watcher and server with:
   `bundle exec middleman`
 + open `http://localhost:4567`
+
++ Update 2017-07-13: also tested with node 8.1.4, npm 5.0.3, and bower 1.8.0.
+
+#### To commit new code
+
+    cd source-repo
+    MAKE SOME CHANGES
+    middleman build
+
+The code in `dist-repo` should have been changed, commit and push.
+
+
 
 ### Bower package versions
 
