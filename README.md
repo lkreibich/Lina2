@@ -12,7 +12,7 @@ check out branch `source` for the source code. Then check out branch `master` in
     git branch -d master
 
     git clone git@github.com:lkreibich/lkreibich.github.io.git dist-repo
-    cd source-repo
+    cd dist-repo
     git branch -d source
 
     cd source-repo
