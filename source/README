@@ -1,1 +1,4 @@
-README: [https://github.com/lkreibich/lkreibich.github.io/blob/source/README.md](https://github.com/lkreibich/lkreibich.github.io/blob/source/README.md)
+README: https://github.com/lkreibich/lkreibich.github.io/blob/source/README.md
+
+!!! Do not add a markdown file extension to this file's name because then middleman would try to convert it to README/index.html.
+This file is auto-copied from the `source-repo` to the `dist-repo` folder (which corresponds to the source and master branches) by `middleman build`.
