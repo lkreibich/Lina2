@@ -30,7 +30,7 @@ Install `eventmachine` with the following command:
 
 #### Bower Setup
 
-!!! I've decided to check in the `bower_components` folder to make the build more future-safe. The followin instructions should therefor only be required when updating or adding a bower dependency.
+!!! I've decided to check in the `bower_components` folder to make the build more future-safe. The following instructions should therefore only be required when updating or adding a bower dependency.
 
 + Update 2017-07-13: also tested with node 8.1.4, npm 5.0.3, and bower 1.8.0.
 + check that you have `npm` installed (tested with version 2.7.4, but slightly older versions should be fine)
