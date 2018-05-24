@@ -6,10 +6,8 @@
     <title>Anne-Karolina Kreibich - Psychotherapie Starnberg - Kontakt</title>
     <link href='http://www.psychotherapiestarnberg.de/kontakt' rel='canonical'>
     <meta content='Dipl.-Psych. Anne-Karolina Kreibich Praxis für Psychotherapie für Erwachsene, Kinder und Jugendliche Psychologische Psychotherapeutin' name='description'>
-    <link href="../stylesheets/application-be853151.css" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/application-005d16bb.css" rel="stylesheet" type="text/css" />
     <script src="../javascripts/modernizr-84a49412.js" type="text/javascript"></script>
-    <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
     <link href='../favicon-86f23ff6.png' rel='shortcut icon'>
   </head>
   <body class='kontakt kontakt_index'>
@@ -123,12 +121,39 @@
             <h3 class='way'>Anfahrt</h3>
             <div class='map'>
               <div class='row flex-video'>
-                <iframe frameborder='0' height='300px' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2669.713936186022!2d11.342194216001026!3d47.999915279212765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479dd018eeaf9ee1%3A0xefa53900a0334f14!2sDipl.-Psych.+Anne-Karolina+Kreibich%2C+Praxis+f%C3%BCr+Psychotherapie+f%C3%BCr+Erwachsene%2C+Kinder+%26+Jugendliche!5e0!3m2!1sen!2sde!4v1458047503089' width='400px'></iframe>
+                <div id='embedded-map'></div>
               </div>
             </div>
           </div>
         </div>
       </article>
+      <script>
+        function initMap() {
+          var location = {lat: 48.000102, lng: 11.344381};
+          var map = new google.maps.Map(
+            document.getElementById('embedded-map'),
+            {
+              zoom: 16,
+              center: location,
+              disableDefaultUI: true,
+              zoomControl: true,
+              mapTypeControl: true,
+              mapTypeControlOptions: {
+                style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+                mapTypeIds: ['roadmap', 'satellite'],
+                position: google.maps.ControlPosition.LEFT_BOTTOM
+              },
+              fullscreenControl: true
+            }
+          );
+          var marker = new google.maps.Marker({position: location, map: map, title: 'Maximilianstraße 20, 82319 Starnberg'});
+          var infowindow = new google.maps.InfoWindow({
+            content: '<strong>Dipl.-Psych. Anne-Karolina Kreibich,</strong><br>Praxis für Psychotherapie für Erwachsene, Kinder & Jugendliche<br><br>Maximilianstraße 20<br>82319 Starnberg<br><br><a href="https://maps.google.com/maps?ll=47.999915,11.344383&z=16&t=m&hl=en-GB&gl=DE&mapclient=embed&cid=17268271021072535316">Karte vergrößern</a>',maxWidth: 265
+          });
+          infowindow.open(map, marker);
+        }
+      </script>
+      <script async='' defer='' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDc9N7JheJzwhZVaDKbFRA04GoxPFk3P9k&amp;callback=initMap'></script>
     </main>
     <footer>
       <div class='row'>
