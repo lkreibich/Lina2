@@ -49,14 +49,17 @@ Google documentation:
   `bundle exec middleman`
 + open `http://localhost:4567`
 
-#### To commit new code
+#### Deployment & how to commit new code
 
     cd source-repo
-    MAKE SOME CHANGES
+    MAKE SOME CHANGES, COMMIT & PUSH THEM
     middleman build
 
 The code in `dist-repo` should have been changed, commit and push.
 
+Final step & gotcha:
++ need to manually adjust the woff2-paths in the compiled css file because of this middleman issue:
+[https://github.com/middleman/middleman/issues/1496](https://github.com/middleman/middleman/issues/1496).
 
 
 ### Bower package versions
