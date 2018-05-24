@@ -27,6 +27,11 @@ Install `eventmachine` with the following command:
 
     gem install eventmachine -v '1.0.7' -- --with-cppflags=-I/usr/local/opt/openssl/include
 
+#### Google Maps API Key
+In order for the map on the contacts page to work in development mode you must add your own Google API key in [source/kontakt.html](source/kontakt.html).
+Google documentation:
++ [How to get an API key](https://support.google.com/cloud/answer/6158862?pli=1).
++ To enable your API key for the Google Maps JavaScript API: [https://stackoverflow.com/a/38056246](https://stackoverflow.com/a/38056246).
 
 #### Bower Setup
 
